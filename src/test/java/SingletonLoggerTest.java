@@ -31,4 +31,9 @@ public class SingletonLoggerTest {
         assertEquals("123",SingletonLogger.getInstancia().getUsuario().getSenha());
     }
 
+    @Test
+    public void usuarioNullTest(){
+        assertEquals(null,SingletonLogger.getInstancia().getUsuario());
+    }
+
 }
