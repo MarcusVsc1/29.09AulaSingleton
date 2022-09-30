@@ -2,6 +2,7 @@ import model.Usuario;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class SingletonLoggerTest {
 
@@ -33,7 +34,7 @@ public class SingletonLoggerTest {
 
     @Test
     public void usuarioNullTest(){
-        assertEquals(null,SingletonLogger.getInstancia().getUsuario());
+        assertNull(SingletonLogger.getInstancia().getUsuario());
     }
 
 }
